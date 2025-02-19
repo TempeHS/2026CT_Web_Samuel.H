@@ -32,6 +32,18 @@
         padding: 20px;
       }
     </style>
+    <script>
+      function clickme() {
+        let clickmeDiv = document.getElementById("clickme");
+        alert("did you click me?");
+        let currentText = clickmeDiv.innerHTML;
+        if (currentText == "You clicked") {
+          clickmeDiv.innerHTML = "Click me again";
+        } else {
+          clickmeDiv.innerHTML = "You clicked";
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="sidebar">
@@ -49,7 +61,7 @@
         src="https://s.catch.com.au/images/product/0023/23648/670da2172d1f9715858809_w803h620.webp"
       />
       <div>
-        <div>afsa</div>
+        <div><a href="javascript:clickme()" id="clickme"> Click me</a></div>
         <div>asfd</div>
       </div>
     </div>
