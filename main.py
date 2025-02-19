@@ -11,5 +11,9 @@ def hello_world():
 def page2():
     return render_template("page2.html"), 200
 
+@app.route('/page3')
+def page3():
+    return render_template("page3.html"), 200
+
 if __name__ == '__main__':
     app.run(debug=True)
