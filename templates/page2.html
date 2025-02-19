@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>My Website Information</title>
+    <style>
+        /* Sidebar styling */
+        .sidebar {
+            height: 100vh; /* Full height */
+            width: 100px; /* Sidebar width */
+            position: fixed; /* Fixed sidebar */
+            top: 0;
+            left: 0;
+            background-color: #333; /* Dark background */
+            padding-top: 20px;
+            color: white;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Page content styling */
+        .content {
+            margin-left: 110px; /* Adjust content to not overlap sidebar */
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body>
+     <div class="sidebar">
+        <h2>Sidebar Menu</h2>
+        <a href="/">Home</a>
+        <a href="#dogHeading">Cool Dog</a>
+    </div>
+
+    <div class="content">
+    <h1>Welcome To The Next Page This is About Text Tags</h1>
+    <em> Look at the text moving isn't it cool!? </em>
+
+    <marquee><strong>I move across the page! </strong></marquee>
+
+    <table border="1">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td>Samuel</td>
+        <td>Hazard</td>
+      </tr>
+      <tr>
+        <td>html</td>
+        <td>Table</td>
+      </tr>
+    </table>
+    <br /><br />
+    <u>I'm underlined Text</u>
+    <hr />
+    <ul>
+      <li>I</li>
+      <li>am</li>
+      <li>a</li>
+      <li>
+        <strong style="color: darkblue">unordered dark blue colour</strong>
+      </li>
+      <li>list</li>
+    </ul>
+    <ol>
+      <li>I</li>
+      <li>am</li>
+      <li>a</li>
+      <li><strong>ordered</strong></li>
+      <li>list</li>
+    </ol>
+    <h4 id="dogHeading">Cool Dog</h4>
+    <img
+      src="https://cdn.pixabay.com/photo/2023/10/03/10/06/ai-generated-8291089_1280.png"
+      width="200"
+      height="200"
+      alt="I am a image of a gangsta dog with sunglasses"
+    />
+    <form action="submit.php" method="post">
+      <!-- Text Input -->
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      />
+      <br /><br />
+
+      <!-- Email Input -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br /><br />
+
+      <!-- Password Input -->
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+      />
+      <label for="options">Choose an option:</label>
+      <select id="options" name="options">
+        <option value="">-- Select an option --</option>
+        <option value="option 1">good level of security</option>
+        <option value="option 2">bad level of security</option>
+        <option value="option 3">optimal level of security</option>
+        <option value="option 4">insane level of security</option>
+      </select>
+</div>      
+  </body>
+</html>
