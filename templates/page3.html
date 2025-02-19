@@ -1,13 +1,57 @@
 <html>
+  <head>
+    <title>My Website.com</title>
+    <style>
+      /* Sidebar styling */
+      .sidebar {
+        height: 100vh; /* Full height */
+        width: 100px; /* Sidebar width */
+        position: fixed; /* Fixed sidebar */
+        top: 0;
+        left: 0;
+        background-color: #333; /* Dark background */
+        padding-top: 20px;
+        color: white;
+      }
+
+      .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+      }
+
+      .sidebar a:hover {
+        background-color: #575757;
+      }
+
+      /* Page content styling */
+      .content {
+        margin-left: 110px; /* Adjust content to not overlap sidebar */
+        padding: 20px;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Deb page</h1>
-    <p>this is something</p>
-    <img
-      src="https://s.catch.com.au/images/product/0023/23648/670da2172d1f9715858809_w803h620.webp"
-    />
-    <div>
-      <div>afsa</div>
-      <div>asfd</div>
+    <div class="sidebar">
+      <h2>Sidebar Menu</h2>
+      <a href="/">Home</a>
+      <a href="/page2">Page 2</a>
+      <a href="/page3">Page 3</a>
+      <a href="/page2#dogHeading">Cool Dog</a>
+    </div>
+
+    <div class="content">
+      <h1>Deb page</h1>
+      <p>this is something</p>
+      <img
+        src="https://s.catch.com.au/images/product/0023/23648/670da2172d1f9715858809_w803h620.webp"
+      />
+      <div>
+        <div>afsa</div>
+        <div>asfd</div>
+      </div>
     </div>
   </body>
 </html>
