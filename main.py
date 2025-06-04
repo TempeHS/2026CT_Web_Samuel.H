@@ -57,6 +57,18 @@ def intermediate():
 def beginner():
     return render_template("beginner.html"), 200
 
+@app.route('/intermediatecontent.html')
+def intermediatecontent():
+    return render_template("intermediatecontent.html"), 200
+
+@app.route('/professionalcontent.html')
+def professionalcontent():
+    return render_template("professionalcontent.html"), 200
+
+@app.route('/beginnercontent.html')
+def beginnnercontent():
+    return render_template("beginnercontent.html"), 200
+
 
 if __name__ == '__main__':
     app.run(debug=True)
