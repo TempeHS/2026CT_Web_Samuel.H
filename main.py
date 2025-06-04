@@ -29,5 +29,34 @@ def faq():
 def signup():
     return render_template("signup.html"), 200
 
+@app.route('/basic.html')
+def basic():
+    return render_template("basic.html"), 200
+
+@app.route('/further.html')
+def further():
+    return render_template("further.html"), 200
+
+@app.route('/about.html')
+def about():
+    return render_template("about.html"), 200
+
+@app.route('/lesson.html')
+def lesson():
+    return render_template("lesson.html"), 200
+
+@app.route('/pro.html')
+def pro():
+    return render_template("pro.html"), 200
+
+@app.route('/intermediate.html')
+def intermediate():
+    return render_template("intermediate.html"), 200
+
+@app.route('/beginner.html')
+def beginner():
+    return render_template("beginner.html"), 200
+
+
 if __name__ == '__main__':
     app.run(debug=True)
